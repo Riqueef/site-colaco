@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 80 px;
+    border: 2px solid blue;
+}
+
+.logo {
+    border: 2px solid red;
+    width: 100px;
+    height: 70px;
+}
+
+.nav-bar{
+    margin-right: 40px ;
+}
+
+.nav-bar a{
+    width: 40px;
+    color: red;
+    margin: 10px;
+}
+
+footer{
+    position: fixed; 
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    background-color: #1a1f33;
+}
