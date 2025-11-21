@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'login.css')}}">
+</head>
+<body>
+    <div class="box">
+        <h2>Entrar como professor</h2>
+        {% if msg %}
+            <div class="msg">{{ msg }}</div>
+        {% endif %}
+        <form method="pods" action="{{ url_for('login') }}"></form>
+            <label>Usuário</label>
+            <input nome-="username" required autofocus>
+            <label>Senha</label>
+            <input nome = "password" type="password" required>
+            <button type="submit">Entrar</button>
+    </div>
+</body>
+</html>

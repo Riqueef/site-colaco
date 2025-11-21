@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 80 px;
+   background-color: rgb(240, 240, 232);
+}
+
+
+.logo img {
+    width: 70px;
+}
+
+.nav-bar{
+    margin-right: 40px ;
+}
+
+.nav-bar a{
+    width: 40px;
+    color: red;
+    margin: 10px;
+}
+
+.carossel-container{
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+.carrosel{
+    display: flex;
+    width: 100%;
+    animation: slid 10s infinite;
+}
+
+.carossel-item{
+    width: 100%;
+    flex-shrink: 0;
+}
+.carossel-item img{
+    width: 30%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translate(0%);}
+    20% { transform: translate(0%);}
+    
+    25% { transform: translate(-100%);}
+    45% { transform: translate(-100%);}
+
+    50% { transform: translate(-200%);}
+    70% { transform: translate(-200%);} 
+
+    75% { transform: translate(-300%);} 
+    95% { transform: translate(-300%);}
+    
+    100% { transform: translate(0%);}
+}
+
+
+
+
+footer{
+    position: fixed; 
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    background-color: #1a1f33;
+}
